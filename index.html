@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Números</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-principal" id="container-principal">
+            <img src="./imagens/Robo.png">
+            <div class="textos-nome" id="textos-nome">
+                <h2>Olá!</br>Qual o seu nome?</h2>
+                <div class="digita-nome">
+                    <input type="text" placeholder="Digite seu nome" id="nome-usuario">
+                    <button type="submit" id="botao-nome">OK</button>
+                </div>
+            </div>
+            <div class="seleciona-jogo" id="seleciona-jogo">
+                <h2>E qual jogo iremos jogar <a id="nome-digitado"></a>?</h2>
+                <div class="digita-jogo">
+                    <input type="radio" id="par-impar" name="jogo-selecionado" value="par-impar">
+                    <label for="par-impar">Par ou Impar</label>
+                    </br>
+                    <input type="radio" id="primos" name="jogo-selecionado" value="primos">
+                    <label for="primos">Números Primos</label>
+                    </br>
+                    <input type="radio" id="fibonacci" name="jogo-selecionado" value="fibonacci">
+                    <label for="fibonacci">Sequência de Fibonacci</label>
+                    </br>
+                    <input type="radio" id="multiplos-04" name="jogo-selecionado" value="multiplos-04">
+                    <label for="multiplos-04">Multiplos de 04.</label>
+                    </br>
+                    <button type="submit" id="botao-jogo">OK</button>
+                </div>
+            </div>
+            <div class="escolhe-numero" id="escolhe-numero">
+                <h2>Esse jogo é tão legal!</br>Agora escolha um número de 01 a 1000</h2>
+                <div class="digita-numero">
+                    <input type="number" min="1" max="1000" placeholder="Escolha um número" id="numero-escolhido">
+                    <button type="submit" id="botao-numero">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-jogos" id="container-jogos">
+            <div class="jogo-01" id="jogo-01">
+                <h2><a id="user-jogo01"></a>, o número que você escolheu é <a id="numero-jogo01"></a>.</h2>
+                <br>
+                <h2>Esse número é <a id="paridade"></a>.</h2>
+            </div>
+            <div class="jogo-02" id="jogo-02">
+                <h2><a id="user-jogo02"></a>, o número que você escolheu é <a id="numero-jogo02"></a>.</h2>
+                <h2>Esse número <a id="primalidade">não</a> é um número primo.</h2>
+            </div>
+            <div class="jogo-03" id="jogo-03">
+                <h2><a id="user-jogo03"></a>, o número que você escolheu é <a id="numero-jogo03"></a>.</h2>
+                <h2>Esse número <a id="sequencia-fib">não</a> pertence a sequência de Fibonacci.</h2>
+            </div>
+            <div class="jogo-04" id="jogo-04">
+                <h2><a id="user-jogo04"></a>, o número que você escolheu é <a id="numero-jogo04"></a>.</h2>
+                <a id="sequencia-pin"></a>
+            </div>
+        </div>
+        <button type="submit" id="botao-reset">Recomeçar jogo</button>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
